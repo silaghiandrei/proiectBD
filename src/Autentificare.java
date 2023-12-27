@@ -75,7 +75,7 @@ public class Autentificare extends JDialog{
             }
 
             String queryFunctie = "SELECT idangajat, functia, angajat_idangajat FROM angajat JOIN utilizator ON angajat.idangajat = utilizator.angajat_idangajat";
-
+            //comentariu
             stmt.close();
             con.close();
         }
