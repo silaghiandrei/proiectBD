@@ -16,6 +16,8 @@ public class Autentificare extends JDialog{
 
     public Utilizator user;
 
+    public Angajat angajat;
+
     public Autentificare(JFrame parent){
         super(parent);
         setTitle("Autentificare");
@@ -33,7 +35,15 @@ public class Autentificare extends JDialog{
                 user = getAuthenticatedUser(username, password);
 
                 if(user != null){
-                    dispose();
+                    angajat = getAngajatInfo(user);
+                    if(angajat != null && "medic".equalsIgnoreCase(angajat.functia)){
+                        openMedicForm();
+                        dispose();
+                    }
+                    if(angajat != null && "inspector resurse umane".equalsIgnoreCase(angajat.functia)){
+                        openInspectorForm();
+                        dispose();
+                    }
                 }
                 else{
                     JOptionPane.showMessageDialog(Autentificare.this,
@@ -72,10 +82,9 @@ public class Autentificare extends JDialog{
                 user = new Utilizator();
                 user.numeUtilizator = rs.getString("nume_utilizator");
                 user.parola = rs.getString("parola");
+                user.angajat_idangajat = rs.getInt("angajat_idangajat");
             }
 
-            String queryFunctie = "SELECT idangajat, functia, angajat_idangajat FROM angajat JOIN utilizator ON angajat.idangajat = utilizator.angajat_idangajat";
-            //comentariu
             stmt.close();
             con.close();
         }
@@ -86,6 +95,54 @@ public class Autentificare extends JDialog{
         return user;
     }
 
+    public Angajat getAngajatInfo(Utilizator user){
+        Angajat angajat = null;
+
+        final String DB_URL = "jdbc:mysql://localhost/mydb";
+        final String USERNAME = "root";
+        final String PASSWORD = "mysqlpass";
+
+        try (Connection con = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD)) {
+            String sql = "SELECT * FROM angajat WHERE idangajat = ?";
+            try (PreparedStatement preparedStatement = con.prepareStatement(sql)) {
+                preparedStatement.setInt(1, user.angajat_idangajat);
+
+                try (ResultSet rs = preparedStatement.executeQuery()) {
+                    if (rs.next()) {
+                        angajat = new Angajat();
+                        angajat.idangajat = rs.getInt("idangajat");
+                        angajat.cnp = rs.getString("cnp");
+                        angajat.nume = rs.getString("nume");
+                        angajat.prenume = rs.getString("prenume");
+                        angajat.adresa = rs.getString("adresa");
+                        angajat.email = rs.getString("email");
+                        angajat.telefon = rs.getString("telefon");
+                        angajat.iban = rs.getString("iban");
+                        angajat.dataAngajarii = rs.getDate("dataAngajarii");
+                        angajat.functia = rs.getString("functia");
+                        angajat.salariu = rs.getInt("salariu");
+                    }
+                }
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return angajat;
+    }
+
+    public void openMedicForm(){
+        SwingUtilities.invokeLater(()->{
+            MedicForm medicForm = new MedicForm();
+            medicForm.setVisible(true);
+        });
+    }
+
+    public void openInspectorForm(){
+        SwingUtilities.invokeLater(()->{
+            InspectorForm inspectorForm = new InspectorForm();
+            inspectorForm.setVisible(true);
+        });
+    }
     public static void main(String[] args)
     {
         Autentificare autentificare = new Autentificare(null);
