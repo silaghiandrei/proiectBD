@@ -36,12 +36,8 @@ public class Autentificare extends JDialog{
 
                 if(user != null){
                     angajat = getAngajatInfo(user);
-                    if(angajat != null && "medic".equalsIgnoreCase(angajat.functia)){
-                        openMedicForm();
-                        dispose();
-                    }
-                    if(angajat != null && "inspector resurse umane".equalsIgnoreCase(angajat.functia)){
-                        openInspectorForm();
+                    if(angajat != null){
+                        openUserForm(angajat);
                         dispose();
                     }
                 }
@@ -130,19 +126,13 @@ public class Autentificare extends JDialog{
         return angajat;
     }
 
-    public void openMedicForm(){
+    public void openUserForm(Angajat angajat){
         SwingUtilities.invokeLater(()->{
-            MedicForm medicForm = new MedicForm();
-            medicForm.setVisible(true);
+            UserForm userForm = new UserForm(angajat);
+            userForm.setVisible(true);
         });
     }
 
-    public void openInspectorForm(){
-        SwingUtilities.invokeLater(()->{
-            InspectorForm inspectorForm = new InspectorForm();
-            inspectorForm.setVisible(true);
-        });
-    }
     public static void main(String[] args)
     {
         Autentificare autentificare = new Autentificare(null);
