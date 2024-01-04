@@ -41,6 +41,10 @@ public class Autentificare extends JDialog{
                         openAdminForm(angajat);
                         dispose();
                     }
+                    if(angajat != null && angajat.functia.equalsIgnoreCase("inspector resurse umane")){
+                        openInspectorForm(angajat);
+                        dispose();
+                    }
                 }
                 else{
                     JOptionPane.showMessageDialog(Autentificare.this,
@@ -131,6 +135,13 @@ public class Autentificare extends JDialog{
         SwingUtilities.invokeLater(()->{
             AdminForm adminForm = new AdminForm(angajat);
             adminForm.setVisible(true);
+        });
+    }
+
+    public void openInspectorForm(Angajat angajat){
+        SwingUtilities.invokeLater(()->{
+            InspectorForm inspectorForm = new InspectorForm(angajat);
+            inspectorForm.setVisible(true);
         });
     }
 
