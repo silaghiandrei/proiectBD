@@ -17,6 +17,10 @@ public class UserForm extends JFrame{
     private JLabel functiaLabel;
     private JLabel salariuLabel;
     private JButton deautentificareButton;
+    private JButton resurseUmaneButton;
+    private JButton finanteButton;
+    private JButton operationalButton;
+    private JPanel modulPanel;
 
     public UserForm(Angajat angajat){
         setTitle("UserForm");
@@ -43,7 +47,12 @@ public class UserForm extends JFrame{
                 Autentificare newAutentificare = new Autentificare(null);
             }
         });
+        if(angajat.functia.equalsIgnoreCase("administrator") ||
+                angajat.functia.equalsIgnoreCase("super-administrator")){
+            resurseUmaneButton.setVisible(false);
+            finanteButton.setVisible(false);
+            operationalButton.setVisible(false);
+        }
         setVisible(true);
     }
-
 }
