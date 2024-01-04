@@ -36,8 +36,9 @@ public class Autentificare extends JDialog{
 
                 if(user != null){
                     angajat = getAngajatInfo(user);
-                    if(angajat != null){
-                        openUserForm(angajat);
+                    if(angajat != null && (angajat.functia.equalsIgnoreCase("administrator")
+                    || angajat.functia.equalsIgnoreCase("super-administrator"))){
+                        openAdminForm(angajat);
                         dispose();
                     }
                 }
@@ -126,10 +127,10 @@ public class Autentificare extends JDialog{
         return angajat;
     }
 
-    public void openUserForm(Angajat angajat){
+    public void openAdminForm(Angajat angajat){
         SwingUtilities.invokeLater(()->{
-            UserForm userForm = new UserForm(angajat);
-            userForm.setVisible(true);
+            AdminForm adminForm = new AdminForm(angajat);
+            adminForm.setVisible(true);
         });
     }
 
