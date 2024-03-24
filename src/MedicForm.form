@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MedicForm">
+  <grid id="27dc6" binding="medicPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="558" height="624"/>
+    </constraints>
+    <properties>
+      <background color="-16621203"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="225b1" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16436412"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c9084" class="javax.swing.JButton" binding="logOutButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16631999"/>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Log Out"/>
+            </properties>
+          </component>
+          <hspacer id="d4f5e">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="3c177" class="javax.swing.JButton" binding="programariButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16631999"/>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Programari "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="25d86" binding="istoricPanel" layout-manager="GridLayoutManager" row-count="19" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16621203"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ab774" class="javax.swing.JLabel" binding="raportLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-1"/>
+              <text value="Raport medical"/>
+            </properties>
+          </component>
+          <component id="f1920" class="javax.swing.JLabel" binding="numePacientLabel">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Nume pacient"/>
+            </properties>
+          </component>
+          <component id="7675b" class="javax.swing.JLabel" binding="prenumePacientLabel">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Prenume pacient"/>
+            </properties>
+          </component>
+          <component id="9825f" class="javax.swing.JTextField" binding="numePacText">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="73aee" class="javax.swing.JTextField" binding="prenumePacText">
+            <constraints>
+              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="b6340" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Nume medic"/>
+            </properties>
+          </component>
+          <component id="605a5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Prenume medic"/>
+            </properties>
+          </component>
+          <component id="ea651" class="javax.swing.JTextField" binding="numeMedText">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d2f41" class="javax.swing.JTextField" binding="prenumeMedText">
+            <constraints>
+              <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="8534" class="javax.swing.JLabel" binding="dataLabel">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Data consultatie"/>
+            </properties>
+          </component>
+          <component id="fabdf" class="javax.swing.JTextField" binding="dataText">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <vspacer id="7be6f">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="27a81">
+            <constraints>
+              <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="f09e4">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="f888c">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="3a1b7" class="javax.swing.JLabel" binding="istoric">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Istoric"/>
+            </properties>
+          </component>
+          <component id="ae6ba" class="javax.swing.JTextArea" binding="istoricText">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="bf8dd" class="javax.swing.JLabel" binding="simptome">
+            <constraints>
+              <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Simptome"/>
+            </properties>
+          </component>
+          <component id="be9a1" class="javax.swing.JTextArea" binding="simptomeText">
+            <constraints>
+              <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <hspacer id="20cad">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="acf9f" class="javax.swing.JLabel" binding="invest">
+            <constraints>
+              <grid row="12" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Investigatii"/>
+            </properties>
+          </component>
+          <component id="abd0e" class="javax.swing.JTextArea" binding="investText">
+            <constraints>
+              <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f4bf7" class="javax.swing.JLabel" binding="diag">
+            <constraints>
+              <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Diagnostic"/>
+            </properties>
+          </component>
+          <component id="b9bfc" class="javax.swing.JTextArea" binding="diagText">
+            <constraints>
+              <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6268d" class="javax.swing.JLabel" binding="recom">
+            <constraints>
+              <grid row="14" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Recomandari"/>
+            </properties>
+          </component>
+          <component id="74781" class="javax.swing.JTextArea" binding="recomText">
+            <constraints>
+              <grid row="15" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="938b2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Cod parafa"/>
+            </properties>
+          </component>
+          <component id="c9ba" class="javax.swing.JTextArea" binding="codText">
+            <constraints>
+              <grid row="15" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="52d18" class="javax.swing.JButton" binding="adaugaButton">
+            <constraints>
+              <grid row="17" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14531772"/>
+              <font name="Bahnschrift" size="16" style="0"/>
+              <foreground color="-1"/>
+              <text value="Adauga raport"/>
+            </properties>
+          </component>
+          <vspacer id="3a6ad">
+            <constraints>
+              <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="c39bc">
+            <constraints>
+              <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="56b6">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ModificaAngajatForm">
+  <grid id="27dc6" binding="updatePanel" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="640" height="497"/>
+    </constraints>
+    <properties>
+      <background color="-15594937"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="42c34" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15922641"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <hspacer id="c3fc7">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="b3aee" class="javax.swing.JButton" binding="homeButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16120030"/>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Home"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="534c1" class="javax.swing.JList" binding="listaAngajati">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16054231"/>
+          <foreground color="-1"/>
+          <selectionForeground color="-1"/>
+        </properties>
+      </component>
+      <grid id="eb47" binding="detailsPanel" layout-manager="GridLayoutManager" row-count="16" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13745298"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d47ed" class="javax.swing.JLabel" binding="numeLabel">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Nume"/>
+            </properties>
+          </component>
+          <component id="7a218" class="javax.swing.JLabel" binding="ibanLabel">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="IBAN"/>
+            </properties>
+          </component>
+          <component id="667ef" class="javax.swing.JTextField" binding="numeText">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="91909" class="javax.swing.JTextField" binding="ibanText">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="908b4" class="javax.swing.JLabel" binding="prenumeLabel">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Prenume"/>
+            </properties>
+          </component>
+          <component id="2b30c" class="javax.swing.JLabel" binding="dataAngajarii">
+            <constraints>
+              <grid row="3" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Data angajare"/>
+            </properties>
+          </component>
+          <component id="797e5" class="javax.swing.JTextField" binding="prenumeText">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="23e89" class="javax.swing.JTextField" binding="dataAngText">
+            <constraints>
+              <grid row="4" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="ea371" class="javax.swing.JLabel" binding="cnpLabel">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="CNP"/>
+            </properties>
+          </component>
+          <component id="3469d" class="javax.swing.JLabel" binding="functieLabel">
+            <constraints>
+              <grid row="5" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Functia"/>
+            </properties>
+          </component>
+          <component id="8c3ba" class="javax.swing.JTextField" binding="cnpText">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="320f" class="javax.swing.JTextField" binding="functiaText">
+            <constraints>
+              <grid row="6" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e5b2" class="javax.swing.JLabel" binding="adresLabel">
+            <constraints>
+              <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Adresa"/>
+            </properties>
+          </component>
+          <component id="6417" class="javax.swing.JLabel" binding="salariuLabel">
+            <constraints>
+              <grid row="7" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Salariu"/>
+            </properties>
+          </component>
+          <component id="16c43" class="javax.swing.JTextField" binding="adresaText">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="cca3a" class="javax.swing.JTextField" binding="salariuText">
+            <constraints>
+              <grid row="8" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="28994" class="javax.swing.JLabel" binding="emailLabel">
+            <constraints>
+              <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Email"/>
+            </properties>
+          </component>
+          <component id="c0f18" class="javax.swing.JLabel" binding="nrOreLabel">
+            <constraints>
+              <grid row="9" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Numar de ore"/>
+            </properties>
+          </component>
+          <component id="19639" class="javax.swing.JTextField" binding="emailText">
+            <constraints>
+              <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f00d2" class="javax.swing.JTextField" binding="nrOreText">
+            <constraints>
+              <grid row="10" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="dd5c" class="javax.swing.JLabel" binding="telefonLabel">
+            <constraints>
+              <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Telefon"/>
+            </properties>
+          </component>
+          <component id="4211e" class="javax.swing.JTextField" binding="telefonText">
+            <constraints>
+              <grid row="12" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="588f3" class="javax.swing.JButton" binding="updateButton">
+            <constraints>
+              <grid row="14" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Actualizeaza"/>
+            </properties>
+          </component>
+          <vspacer id="6f3f9">
+            <constraints>
+              <grid row="13" column="5" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="630f8">
+            <constraints>
+              <grid row="15" column="5" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="9bdb5">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="a2859">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="894bb">
+            <constraints>
+              <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="6b01c">
+            <constraints>
+              <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="67b52">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="8f5ec">
+            <constraints>
+              <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="e75c4" class="javax.swing.JButton" binding="deleteButton">
+            <constraints>
+              <grid row="14" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Sterge"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
