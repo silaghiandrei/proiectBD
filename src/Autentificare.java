@@ -22,7 +22,7 @@ public class Autentificare extends JDialog{
         super(parent);
         setTitle("Autentificare");
         setContentPane(autentificarePanou);
-        setMinimumSize(new Dimension(450, 474));
+        setMinimumSize(new Dimension(450, 470));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -43,6 +43,22 @@ public class Autentificare extends JDialog{
                     }
                     if(angajat != null && angajat.functia.equalsIgnoreCase("inspector resurse umane")){
                         openInspectorForm(angajat);
+                        dispose();
+                    }
+                    if(angajat != null && angajat.functia.equalsIgnoreCase("expert financiar contabil")){
+                        openContabilForm(angajat);
+                        dispose();
+                    }
+                    if(angajat != null && angajat.functia.equalsIgnoreCase("receptioner")){
+                        openRecepForm(angajat);
+                        dispose();
+                    }
+                    if(angajat != null && angajat.functia.equalsIgnoreCase("asistent medical")){
+                        openAsistentForm(angajat);
+                        dispose();
+                    }
+                    if(angajat != null && angajat.functia.equalsIgnoreCase("medic")){
+                        openMedicForm(angajat);
                         dispose();
                     }
                 }
@@ -122,6 +138,7 @@ public class Autentificare extends JDialog{
                         angajat.dataAngajarii = rs.getDate("dataAngajarii");
                         angajat.functia = rs.getString("functia");
                         angajat.salariu = rs.getInt("salariu");
+                        angajat.nrOre =rs.getInt("nrOre");
                     }
                 }
             }
@@ -133,15 +150,43 @@ public class Autentificare extends JDialog{
 
     public void openAdminForm(Angajat angajat){
         SwingUtilities.invokeLater(()->{
-            AdminForm adminForm = new AdminForm(angajat);
+            AdministratorForm adminForm = new AdministratorForm(angajat);
             adminForm.setVisible(true);
         });
     }
 
     public void openInspectorForm(Angajat angajat){
         SwingUtilities.invokeLater(()->{
-            InspectorForm inspectorForm = new InspectorForm(angajat);
+            InspectorForm2 inspectorForm = new InspectorForm2(angajat);
             inspectorForm.setVisible(true);
+        });
+    }
+
+    public void openContabilForm(Angajat angajat){
+        SwingUtilities.invokeLater(()->{
+            ContabilForm contabilForm = new ContabilForm(angajat);
+            contabilForm.setVisible(true);
+        });
+    }
+
+    public void openRecepForm(Angajat angajat){
+        SwingUtilities.invokeLater(()->{
+            ReceptionerForm receptionerForm = new ReceptionerForm(angajat);
+            receptionerForm.setVisible(true);
+        });
+    }
+
+    public void openAsistentForm(Angajat angajat){
+        SwingUtilities.invokeLater(()->{
+            AsistentForm asistentForm = new AsistentForm(angajat);
+            asistentForm.setVisible(true);
+        });
+    }
+
+    public void openMedicForm(Angajat angajat){
+        SwingUtilities.invokeLater(()->{
+            MedicForm medicForm = new MedicForm(angajat);
+            medicForm.setVisible(true);
         });
     }
 
